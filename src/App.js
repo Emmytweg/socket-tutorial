@@ -8,21 +8,25 @@ function App() {
 
   const [firstName, setfirstName] = useState('')
   const [room, setroom] = useState('')
+const [showChat, setshowChat] = useState(false)
 
   const joinRoom = () => {
     if (firstName !== "" && room !== "" )  {
      socket.emit("join_room", room) 
+     setshowChat(true)
     }
   }
   return (
     <div className="App">
-      <h1>Join A Chat</h1>
+    { !showChat?  <div className='joinChatContainer'>
+     <h1>Join A Chat</h1>
       <input type='text' placeholder='Join...' onChange={(e) => {setfirstName(e.target.value)}} />
       <input type='text' placeholder='Room 10...' onChange={(e)=> {setroom(e.target.value)}} />
       <button  onClick={joinRoom}>Join A room</button>
+     </div>
 
-
-      <Chat socket={socket} username={firstName} room={room} />
+    :
+      <Chat socket={socket} username={firstName} room={room} />}
     </div>
   );
 }

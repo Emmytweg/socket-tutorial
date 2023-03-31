@@ -15,13 +15,13 @@ const sendMessage = async () => {
         time: new Date(Date.now()).getHours() + new Date(Date.now()).getUTCDay() + ":" + new Date(Date.now()).getMinutes()
        } 
         await socket.emit("send_message", messageData);
-    setmessageList((list)=> [...list, messageList])
+    setmessageList((list) => [...list, messageData])
 setcurrentMessage("")
     }
 }
 useEffect(() => {
   socket.on("receive_message", (data) => {
-    setmessageList((list)=> [...list, messageList])
+    setmessageList((list) => [...list, data])
   })
 }, [socket])
 

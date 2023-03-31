@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/socket-tutorial/static/css/main.2938562d.css",
+    "main.js": "/socket-tutorial/static/js/main.012b026a.js",
+    "static/js/787.c4e7f8f9.chunk.js": "/socket-tutorial/static/js/787.c4e7f8f9.chunk.js",
+    "index.html": "/socket-tutorial/index.html",
+    "main.2938562d.css.map": "/socket-tutorial/static/css/main.2938562d.css.map",
+    "main.012b026a.js.map": "/socket-tutorial/static/js/main.012b026a.js.map",
+    "787.c4e7f8f9.chunk.js.map": "/socket-tutorial/static/js/787.c4e7f8f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2938562d.css",
+    "static/js/main.012b026a.js"
+  ]
+}

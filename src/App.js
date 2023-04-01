@@ -20,8 +20,8 @@ const [showChat, setshowChat] = useState(false)
     <div className="App">
     { !showChat?  <div className='joinChatContainer'>
      <h1>Join A Chat</h1>
-      <input type='text' placeholder='Join...' onChange={(e) => {setfirstName(e.target.value)}} />
-      <input type='text' placeholder='Room 10...' onChange={(e)=> {setroom(e.target.value)}} />
+      <input type='text' placeholder='Please Enter Your Name to join a room' onChange={(e) => {setfirstName(e.target.value)}} />
+      <input type='text' placeholder='Enter room number' onChange={(e)=> {setroom(e.target.value)}} />
       <button  onClick={joinRoom}>Join A room</button>
      </div>
 

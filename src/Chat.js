@@ -16,7 +16,7 @@ const sendMessage = async () => {
        } 
         await socket.emit("send_message", messageData);
     setmessageList((list) => [...list, messageData])
-setcurrentMessage("")
+    setcurrentMessage("")
     }
 }
 useEffect(() => {
